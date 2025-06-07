@@ -1,0 +1,528 @@
+2025-06-07 15:02:37,344 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:7500
+2025-06-07 15:02:37,344 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-07 15:03:14,957 - INFO - Request: POST /queues/transactions from 127.0.0.1
+2025-06-07 15:03:14,957 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '0'}
+2025-06-07 15:03:14,962 - INFO - Response: 201 CREATED - {"message":"Queue transactions created"}
+
+2025-06-07 15:03:14,962 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:14] "[35m[1mPOST /queues/transactions HTTP/1.1[0m" 201 -
+2025-06-07 15:03:16,998 - INFO - Request: POST /queues/results from 127.0.0.1
+2025-06-07 15:03:16,999 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '0'}
+2025-06-07 15:03:17,000 - INFO - Response: 201 CREATED - {"message":"Queue results created"}
+
+2025-06-07 15:03:17,000 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:17] "[35m[1mPOST /queues/results HTTP/1.1[0m" 201 -
+2025-06-07 15:03:29,557 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:29,557 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '119'}
+2025-06-07 15:03:29,557 - INFO - Body: {"transaction_id": "tx_1", "amount": 452.57, "timestamp": "2022-06-26 22:18:55", "status": "rejected", "vendor_id": 91}
+2025-06-07 15:03:29,558 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:29,559 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:29] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:31,611 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:31,611 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '119'}
+2025-06-07 15:03:31,611 - INFO - Body: {"transaction_id": "tx_2", "amount": 879.04, "timestamp": "2023-01-10 15:28:24", "status": "accepted", "vendor_id": 48}
+2025-06-07 15:03:31,612 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:31,613 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:31] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:33,649 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:33,649 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '119'}
+2025-06-07 15:03:33,650 - INFO - Body: {"transaction_id": "tx_3", "amount": 160.57, "timestamp": "2022-08-06 15:52:26", "status": "accepted", "vendor_id": 39}
+2025-06-07 15:03:33,650 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:33,650 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:33] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:35,680 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:35,680 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '119'}
+2025-06-07 15:03:35,680 - INFO - Body: {"transaction_id": "tx_4", "amount": 482.24, "timestamp": "2022-12-21 23:33:39", "status": "rejected", "vendor_id": 90}
+2025-06-07 15:03:35,681 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:35,681 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:35] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:37,730 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:37,730 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '120'}
+2025-06-07 15:03:37,730 - INFO - Body: {"transaction_id": "tx_5", "amount": 138.69, "timestamp": "2023-06-09 23:21:01", "status": "submitted", "vendor_id": 49}
+2025-06-07 15:03:37,731 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:37,731 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:37] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:39,781 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:39,781 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '119'}
+2025-06-07 15:03:39,781 - INFO - Body: {"transaction_id": "tx_6", "amount": 985.96, "timestamp": "2022-05-02 18:04:03", "status": "accepted", "vendor_id": 20}
+2025-06-07 15:03:39,783 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:39,783 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:39] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:41,838 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:41,838 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '118'}
+2025-06-07 15:03:41,839 - INFO - Body: {"transaction_id": "tx_7", "amount": 596.27, "timestamp": "2023-06-17 02:08:36", "status": "rejected", "vendor_id": 4}
+2025-06-07 15:03:41,840 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:41,841 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:41] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:43,891 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:43,891 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '118'}
+2025-06-07 15:03:43,891 - INFO - Body: {"transaction_id": "tx_8", "amount": 830.53, "timestamp": "2022-01-24 08:27:45", "status": "rejected", "vendor_id": 2}
+2025-06-07 15:03:43,893 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:43,893 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:43] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:45,941 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:45,941 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '119'}
+2025-06-07 15:03:45,941 - INFO - Body: {"transaction_id": "tx_9", "amount": 192.81, "timestamp": "2022-07-21 14:13:36", "status": "accepted", "vendor_id": 34}
+2025-06-07 15:03:45,943 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:45,943 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:45] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:47,997 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:47,998 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '120'}
+2025-06-07 15:03:47,998 - INFO - Body: {"transaction_id": "tx_10", "amount": 256.27, "timestamp": "2022-01-16 16:10:53", "status": "accepted", "vendor_id": 51}
+2025-06-07 15:03:48,000 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:48,000 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:48] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:50,053 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:50,053 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '121'}
+2025-06-07 15:03:50,053 - INFO - Body: {"transaction_id": "tx_11", "amount": 318.62, "timestamp": "2022-02-24 02:52:33", "status": "submitted", "vendor_id": 86}
+2025-06-07 15:03:50,055 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:50,055 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:50] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:52,107 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:52,107 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '120'}
+2025-06-07 15:03:52,107 - INFO - Body: {"transaction_id": "tx_12", "amount": 611.55, "timestamp": "2022-08-07 10:55:29", "status": "accepted", "vendor_id": 57}
+2025-06-07 15:03:52,108 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:52,108 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:52] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:54,155 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:54,156 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '119'}
+2025-06-07 15:03:54,156 - INFO - Body: {"transaction_id": "tx_13", "amount": 733.2, "timestamp": "2022-07-13 06:30:26", "status": "rejected", "vendor_id": 97}
+2025-06-07 15:03:54,158 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:54,158 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:54] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:56,217 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:56,217 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '120'}
+2025-06-07 15:03:56,217 - INFO - Body: {"transaction_id": "tx_14", "amount": 110.01, "timestamp": "2023-06-12 23:19:49", "status": "rejected", "vendor_id": 48}
+2025-06-07 15:03:56,221 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:56,221 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:56] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:03:58,278 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:03:58,279 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '121'}
+2025-06-07 15:03:58,279 - INFO - Body: {"transaction_id": "tx_15", "amount": 778.89, "timestamp": "2023-01-20 00:41:08", "status": "submitted", "vendor_id": 90}
+2025-06-07 15:03:58,280 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:03:58,280 - INFO - 127.0.0.1 - - [07/Jun/2025 15:03:58] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:04:00,329 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:04:00,330 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '120'}
+2025-06-07 15:04:00,330 - INFO - Body: {"transaction_id": "tx_16", "amount": 513.05, "timestamp": "2023-11-26 03:35:35", "status": "rejected", "vendor_id": 30}
+2025-06-07 15:04:00,330 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:04:00,330 - INFO - 127.0.0.1 - - [07/Jun/2025 15:04:00] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:04:02,382 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:04:02,382 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '121'}
+2025-06-07 15:04:02,382 - INFO - Body: {"transaction_id": "tx_17", "amount": 196.44, "timestamp": "2022-06-22 17:17:43", "status": "submitted", "vendor_id": 92}
+2025-06-07 15:04:02,385 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:04:02,385 - INFO - 127.0.0.1 - - [07/Jun/2025 15:04:02] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:04:04,422 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:04:04,422 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '120'}
+2025-06-07 15:04:04,422 - INFO - Body: {"transaction_id": "tx_18", "amount": 498.59, "timestamp": "2023-12-06 22:22:20", "status": "rejected", "vendor_id": 20}
+2025-06-07 15:04:04,425 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:04:04,427 - INFO - 127.0.0.1 - - [07/Jun/2025 15:04:04] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:04:06,462 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:04:06,462 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '120'}
+2025-06-07 15:04:06,463 - INFO - Body: {"transaction_id": "tx_19", "amount": 706.75, "timestamp": "2023-03-01 12:50:44", "status": "accepted", "vendor_id": 59}
+2025-06-07 15:04:06,464 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:04:06,464 - INFO - 127.0.0.1 - - [07/Jun/2025 15:04:06] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:04:08,513 - INFO - Request: POST /queues/transactions/push from 127.0.0.1
+2025-06-07 15:04:08,513 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '121'}
+2025-06-07 15:04:08,514 - INFO - Body: {"transaction_id": "tx_20", "amount": 511.72, "timestamp": "2022-10-22 09:38:55", "status": "submitted", "vendor_id": 49}
+2025-06-07 15:04:08,515 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:04:08,515 - INFO - 127.0.0.1 - - [07/Jun/2025 15:04:08] "[35m[1mPOST /queues/transactions/push HTTP/1.1[0m" 201 -
+2025-06-07 15:04:55,407 - INFO - Request: POST /queues/transactions from 127.0.0.1
+2025-06-07 15:04:55,407 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'ADMIN_TOKEN', 'Content-Length': '0'}
+2025-06-07 15:04:55,407 - INFO - Response: 400 BAD REQUEST - {"error":"Queue already exists"}
+
+2025-06-07 15:04:55,407 - INFO - 127.0.0.1 - - [07/Jun/2025 15:04:55] "[31m[1mPOST /queues/transactions HTTP/1.1[0m" 400 -
+2025-06-07 15:04:57,446 - INFO - Request: POST /queues/results from 127.0.0.1
+2025-06-07 15:04:57,447 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'ADMIN_TOKEN', 'Content-Length': '0'}
+2025-06-07 15:04:57,447 - INFO - Response: 400 BAD REQUEST - {"error":"Queue already exists"}
+
+2025-06-07 15:04:57,447 - INFO - 127.0.0.1 - - [07/Jun/2025 15:04:57] "[31m[1mPOST /queues/results HTTP/1.1[0m" 400 -
+2025-06-07 15:04:59,497 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:04:59,497 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:04:59,499 - INFO - Response: 200 OK - {"amount":452.57,"status":"rejected","timestamp":"2022-06-26 22:18:55","transaction_id":"tx_1","vendor_id":91}
+
+2025-06-07 15:04:59,499 - INFO - 127.0.0.1 - - [07/Jun/2025 15:04:59] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:01,001 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:05:01,001 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:01,001 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:05:01,001 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:01] "[31m[1mGET /queues/results/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:05:01,545 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:01,545 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:01,547 - INFO - Response: 200 OK - {"amount":879.04,"status":"accepted","timestamp":"2023-01-10 15:28:24","transaction_id":"tx_2","vendor_id":48}
+
+2025-06-07 15:05:01,547 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:01] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:03,605 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:03,605 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:03,606 - INFO - Response: 200 OK - {"amount":160.57,"status":"accepted","timestamp":"2022-08-06 15:52:26","transaction_id":"tx_3","vendor_id":39}
+
+2025-06-07 15:05:03,606 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:03] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:05,657 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:05,657 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:05,659 - INFO - Response: 200 OK - {"amount":482.24,"status":"rejected","timestamp":"2022-12-21 23:33:39","transaction_id":"tx_4","vendor_id":90}
+
+2025-06-07 15:05:05,659 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:05] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:07,709 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:07,709 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:07,712 - INFO - Response: 200 OK - {"amount":138.69,"status":"submitted","timestamp":"2023-06-09 23:21:01","transaction_id":"tx_5","vendor_id":49}
+
+2025-06-07 15:05:07,712 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:07] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:09,788 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:09,788 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:09,789 - INFO - Body: {"transaction_id": "tx_1", "prediction": 0, "worker_rank": 1, "amount": 452.57, "timestamp": "2022-06-26 22:18:55"}
+2025-06-07 15:05:09,791 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:09,791 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:09] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:11,840 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:11,840 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:11,840 - INFO - Body: {"transaction_id": "tx_2", "prediction": 0, "worker_rank": 2, "amount": 879.04, "timestamp": "2023-01-10 15:28:24"}
+2025-06-07 15:05:11,843 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:11,844 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:11] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:13,908 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:13,909 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:13,909 - INFO - Body: {"transaction_id": "tx_3", "prediction": 0, "worker_rank": 3, "amount": 160.57, "timestamp": "2022-08-06 15:52:26"}
+2025-06-07 15:05:13,910 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:13,911 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:13] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:15,959 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:15,959 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:15,959 - INFO - Body: {"transaction_id": "tx_4", "prediction": 0, "worker_rank": 4, "amount": 482.24, "timestamp": "2022-12-21 23:33:39"}
+2025-06-07 15:05:15,960 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:15,961 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:15] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:18,009 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:18,009 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:18,009 - INFO - Body: {"transaction_id": "tx_5", "prediction": 0, "worker_rank": 5, "amount": 138.69, "timestamp": "2023-06-09 23:21:01"}
+2025-06-07 15:05:18,013 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:18,014 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:18] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:21,060 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:21,060 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:21,065 - INFO - Response: 200 OK - {"amount":985.96,"status":"accepted","timestamp":"2022-05-02 18:04:03","transaction_id":"tx_6","vendor_id":20}
+
+2025-06-07 15:05:21,065 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:21] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:23,103 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:23,103 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:23,105 - INFO - Response: 200 OK - {"amount":596.27,"status":"rejected","timestamp":"2023-06-17 02:08:36","transaction_id":"tx_7","vendor_id":4}
+
+2025-06-07 15:05:23,105 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:23] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:25,157 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:25,158 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:25,159 - INFO - Response: 200 OK - {"amount":830.53,"status":"rejected","timestamp":"2022-01-24 08:27:45","transaction_id":"tx_8","vendor_id":2}
+
+2025-06-07 15:05:25,159 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:25] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:27,207 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:27,207 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:27,209 - INFO - Response: 200 OK - {"amount":192.81,"status":"accepted","timestamp":"2022-07-21 14:13:36","transaction_id":"tx_9","vendor_id":34}
+
+2025-06-07 15:05:27,209 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:27] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:29,245 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:29,246 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:29,247 - INFO - Response: 200 OK - {"amount":256.27,"status":"accepted","timestamp":"2022-01-16 16:10:53","transaction_id":"tx_10","vendor_id":51}
+
+2025-06-07 15:05:29,247 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:29] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:31,306 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:31,306 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:31,306 - INFO - Body: {"transaction_id": "tx_6", "prediction": 0, "worker_rank": 1, "amount": 985.96, "timestamp": "2022-05-02 18:04:03"}
+2025-06-07 15:05:31,307 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:31,307 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:31] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:33,353 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:33,353 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:33,353 - INFO - Body: {"transaction_id": "tx_7", "prediction": 0, "worker_rank": 2, "amount": 596.27, "timestamp": "2023-06-17 02:08:36"}
+2025-06-07 15:05:33,355 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:33,355 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:33] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:35,406 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:35,406 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:05:35,407 - INFO - Body: {"transaction_id": "tx_10", "prediction": 0, "worker_rank": 5, "amount": 256.27, "timestamp": "2022-01-16 16:10:53"}
+2025-06-07 15:05:35,408 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:35,409 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:35] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:37,452 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:37,452 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:37,452 - INFO - Body: {"transaction_id": "tx_9", "prediction": 0, "worker_rank": 4, "amount": 192.81, "timestamp": "2022-07-21 14:13:36"}
+2025-06-07 15:05:37,452 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:37,456 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:37] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:39,490 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:39,491 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:39,491 - INFO - Body: {"transaction_id": "tx_8", "prediction": 0, "worker_rank": 3, "amount": 830.53, "timestamp": "2022-01-24 08:27:45"}
+2025-06-07 15:05:39,492 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:39,492 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:39] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:42,527 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:42,527 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:42,530 - INFO - Response: 200 OK - {"amount":318.62,"status":"submitted","timestamp":"2022-02-24 02:52:33","transaction_id":"tx_11","vendor_id":86}
+
+2025-06-07 15:05:42,530 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:42] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:44,593 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:44,593 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:44,594 - INFO - Response: 200 OK - {"amount":611.55,"status":"accepted","timestamp":"2022-08-07 10:55:29","transaction_id":"tx_12","vendor_id":57}
+
+2025-06-07 15:05:44,594 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:44] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:46,618 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:46,618 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:46,620 - INFO - Response: 200 OK - {"amount":733.2,"status":"rejected","timestamp":"2022-07-13 06:30:26","transaction_id":"tx_13","vendor_id":97}
+
+2025-06-07 15:05:46,620 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:46] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:48,672 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:48,672 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:48,674 - INFO - Response: 200 OK - {"amount":110.01,"status":"rejected","timestamp":"2023-06-12 23:19:49","transaction_id":"tx_14","vendor_id":48}
+
+2025-06-07 15:05:48,675 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:48] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:50,720 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:05:50,720 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:05:50,721 - INFO - Response: 200 OK - {"amount":778.89,"status":"submitted","timestamp":"2023-01-20 00:41:08","transaction_id":"tx_15","vendor_id":90}
+
+2025-06-07 15:05:50,722 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:50] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:05:52,792 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:52,793 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '115'}
+2025-06-07 15:05:52,793 - INFO - Body: {"transaction_id": "tx_13", "prediction": 0, "worker_rank": 3, "amount": 733.2, "timestamp": "2022-07-13 06:30:26"}
+2025-06-07 15:05:52,794 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:52,795 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:52] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:54,837 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:54,837 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:05:54,837 - INFO - Body: {"transaction_id": "tx_12", "prediction": 0, "worker_rank": 2, "amount": 611.55, "timestamp": "2022-08-07 10:55:29"}
+2025-06-07 15:05:54,839 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:54,840 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:54] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:56,890 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:56,890 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:05:56,890 - INFO - Body: {"transaction_id": "tx_14", "prediction": 0, "worker_rank": 4, "amount": 110.01, "timestamp": "2023-06-12 23:19:49"}
+2025-06-07 15:05:56,892 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:56,892 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:56] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:05:58,938 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:05:58,938 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:05:58,938 - INFO - Body: {"transaction_id": "tx_15", "prediction": 0, "worker_rank": 5, "amount": 778.89, "timestamp": "2023-01-20 00:41:08"}
+2025-06-07 15:05:58,940 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:05:58,940 - INFO - 127.0.0.1 - - [07/Jun/2025 15:05:58] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:06:00,991 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:06:00,991 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:06:00,991 - INFO - Body: {"transaction_id": "tx_11", "prediction": 0, "worker_rank": 1, "amount": 318.62, "timestamp": "2022-02-24 02:52:33"}
+2025-06-07 15:06:00,992 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:06:00,992 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:00] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:06:04,040 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:04,040 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:04,042 - INFO - Response: 200 OK - {"amount":513.05,"status":"rejected","timestamp":"2023-11-26 03:35:35","transaction_id":"tx_16","vendor_id":30}
+
+2025-06-07 15:06:04,042 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:04] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:06:06,087 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:06,087 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:06,090 - INFO - Response: 200 OK - {"amount":196.44,"status":"submitted","timestamp":"2022-06-22 17:17:43","transaction_id":"tx_17","vendor_id":92}
+
+2025-06-07 15:06:06,090 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:06] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:06:08,145 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:08,145 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:08,147 - INFO - Response: 200 OK - {"amount":498.59,"status":"rejected","timestamp":"2023-12-06 22:22:20","transaction_id":"tx_18","vendor_id":20}
+
+2025-06-07 15:06:08,147 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:08] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:06:10,202 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:10,203 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:10,204 - INFO - Response: 200 OK - {"amount":706.75,"status":"accepted","timestamp":"2023-03-01 12:50:44","transaction_id":"tx_19","vendor_id":59}
+
+2025-06-07 15:06:10,204 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:10] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:06:12,250 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:12,250 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:12,252 - INFO - Response: 200 OK - {"amount":511.72,"status":"submitted","timestamp":"2022-10-22 09:38:55","transaction_id":"tx_20","vendor_id":49}
+
+2025-06-07 15:06:12,252 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:12] "GET /queues/transactions/pull HTTP/1.1" 200 -
+2025-06-07 15:06:14,312 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:06:14,313 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:06:14,313 - INFO - Body: {"transaction_id": "tx_18", "prediction": 0, "worker_rank": 3, "amount": 498.59, "timestamp": "2023-12-06 22:22:20"}
+2025-06-07 15:06:14,314 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:06:14,314 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:14] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:06:16,360 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:06:16,360 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:06:16,360 - INFO - Body: {"transaction_id": "tx_17", "prediction": 0, "worker_rank": 2, "amount": 196.44, "timestamp": "2022-06-22 17:17:43"}
+2025-06-07 15:06:16,362 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:06:16,362 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:16] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:06:18,413 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:06:18,414 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:06:18,414 - INFO - Body: {"transaction_id": "tx_19", "prediction": 0, "worker_rank": 4, "amount": 706.75, "timestamp": "2023-03-01 12:50:44"}
+2025-06-07 15:06:18,415 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:06:18,415 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:18] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:06:20,453 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:06:20,453 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:06:20,453 - INFO - Body: {"transaction_id": "tx_20", "prediction": 0, "worker_rank": 5, "amount": 511.72, "timestamp": "2022-10-22 09:38:55"}
+2025-06-07 15:06:20,455 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:06:20,456 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:20] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:06:22,503 - INFO - Request: POST /queues/results/push from 127.0.0.1
+2025-06-07 15:06:22,504 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN', 'Content-Type': 'application/json', 'Content-Length': '116'}
+2025-06-07 15:06:22,504 - INFO - Body: {"transaction_id": "tx_16", "prediction": 0, "worker_rank": 1, "amount": 513.05, "timestamp": "2023-11-26 03:35:35"}
+2025-06-07 15:06:22,505 - INFO - Response: 201 CREATED - {"message":"Message added to queue"}
+
+2025-06-07 15:06:22,505 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:22] "[35m[1mPOST /queues/results/push HTTP/1.1[0m" 201 -
+2025-06-07 15:06:25,553 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:25,553 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:25,554 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:06:25,554 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:25] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:06:32,607 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:32,607 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:32,607 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:06:32,607 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:32] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:06:37,227 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:37,227 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:37,229 - INFO - Response: 200 OK - {"amount":452.57,"prediction":0,"timestamp":"2022-06-26 22:18:55","transaction_id":"tx_1","worker_rank":1}
+
+2025-06-07 15:06:37,229 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:37] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:39,378 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:39,378 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:39,380 - INFO - Response: 200 OK - {"amount":879.04,"prediction":0,"timestamp":"2023-01-10 15:28:24","transaction_id":"tx_2","worker_rank":2}
+
+2025-06-07 15:06:39,380 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:39] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:39,657 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:39,658 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:39,658 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:06:39,659 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:39] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:06:41,539 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:41,540 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:41,542 - INFO - Response: 200 OK - {"amount":160.57,"prediction":0,"timestamp":"2022-08-06 15:52:26","transaction_id":"tx_3","worker_rank":3}
+
+2025-06-07 15:06:41,542 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:41] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:43,674 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:43,674 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:43,676 - INFO - Response: 200 OK - {"amount":482.24,"prediction":0,"timestamp":"2022-12-21 23:33:39","transaction_id":"tx_4","worker_rank":4}
+
+2025-06-07 15:06:43,676 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:43] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:45,832 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:45,832 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:45,834 - INFO - Response: 200 OK - {"amount":138.69,"prediction":0,"timestamp":"2023-06-09 23:21:01","transaction_id":"tx_5","worker_rank":5}
+
+2025-06-07 15:06:45,834 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:45] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:46,722 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:46,723 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:46,723 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:06:46,723 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:46] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:06:47,983 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:47,983 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:47,985 - INFO - Response: 200 OK - {"amount":985.96,"prediction":0,"timestamp":"2022-05-02 18:04:03","transaction_id":"tx_6","worker_rank":1}
+
+2025-06-07 15:06:47,985 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:47] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:50,149 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:50,150 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:50,151 - INFO - Response: 200 OK - {"amount":596.27,"prediction":0,"timestamp":"2023-06-17 02:08:36","transaction_id":"tx_7","worker_rank":2}
+
+2025-06-07 15:06:50,151 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:50] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:52,311 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:52,311 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:52,313 - INFO - Response: 200 OK - {"amount":256.27,"prediction":0,"timestamp":"2022-01-16 16:10:53","transaction_id":"tx_10","worker_rank":5}
+
+2025-06-07 15:06:52,314 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:52] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:53,770 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:06:53,771 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:53,771 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:06:53,771 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:53] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:06:54,469 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:54,469 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:54,470 - INFO - Response: 200 OK - {"amount":192.81,"prediction":0,"timestamp":"2022-07-21 14:13:36","transaction_id":"tx_9","worker_rank":4}
+
+2025-06-07 15:06:54,471 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:54] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:56,618 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:56,619 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:56,620 - INFO - Response: 200 OK - {"amount":830.53,"prediction":0,"timestamp":"2022-01-24 08:27:45","transaction_id":"tx_8","worker_rank":3}
+
+2025-06-07 15:06:56,620 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:56] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:06:58,741 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:06:58,741 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:06:58,742 - INFO - Response: 200 OK - {"amount":733.2,"prediction":0,"timestamp":"2022-07-13 06:30:26","transaction_id":"tx_13","worker_rank":3}
+
+2025-06-07 15:06:58,742 - INFO - 127.0.0.1 - - [07/Jun/2025 15:06:58] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:00,812 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:07:00,812 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:00,813 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:07:00,813 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:00] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:07:00,892 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:00,892 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:00,894 - INFO - Response: 200 OK - {"amount":611.55,"prediction":0,"timestamp":"2022-08-07 10:55:29","transaction_id":"tx_12","worker_rank":2}
+
+2025-06-07 15:07:00,895 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:00] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:03,033 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:03,033 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:03,034 - INFO - Response: 200 OK - {"amount":110.01,"prediction":0,"timestamp":"2023-06-12 23:19:49","transaction_id":"tx_14","worker_rank":4}
+
+2025-06-07 15:07:03,034 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:03] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:05,197 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:05,197 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:05,199 - INFO - Response: 200 OK - {"amount":778.89,"prediction":0,"timestamp":"2023-01-20 00:41:08","transaction_id":"tx_15","worker_rank":5}
+
+2025-06-07 15:07:05,199 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:05] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:07,348 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:07,348 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:07,350 - INFO - Response: 200 OK - {"amount":318.62,"prediction":0,"timestamp":"2022-02-24 02:52:33","transaction_id":"tx_11","worker_rank":1}
+
+2025-06-07 15:07:07,350 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:07] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:07,860 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:07:07,861 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:07,861 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:07:07,861 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:07] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:07:09,510 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:09,510 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:09,512 - INFO - Response: 200 OK - {"amount":498.59,"prediction":0,"timestamp":"2023-12-06 22:22:20","transaction_id":"tx_18","worker_rank":3}
+
+2025-06-07 15:07:09,512 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:09] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:11,676 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:11,676 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:11,678 - INFO - Response: 200 OK - {"amount":196.44,"prediction":0,"timestamp":"2022-06-22 17:17:43","transaction_id":"tx_17","worker_rank":2}
+
+2025-06-07 15:07:11,678 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:11] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:13,832 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:13,832 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:13,834 - INFO - Response: 200 OK - {"amount":706.75,"prediction":0,"timestamp":"2023-03-01 12:50:44","transaction_id":"tx_19","worker_rank":4}
+
+2025-06-07 15:07:13,834 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:13] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:14,920 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:07:14,920 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:14,921 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:07:14,921 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:14] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:07:15,983 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:15,984 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:15,985 - INFO - Response: 200 OK - {"amount":511.72,"prediction":0,"timestamp":"2022-10-22 09:38:55","transaction_id":"tx_20","worker_rank":5}
+
+2025-06-07 15:07:15,985 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:15] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:18,145 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:18,145 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:18,145 - INFO - Response: 200 OK - {"amount":513.05,"prediction":0,"timestamp":"2023-11-26 03:35:35","transaction_id":"tx_16","worker_rank":1}
+
+2025-06-07 15:07:18,145 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:18] "GET /queues/results/pull HTTP/1.1" 200 -
+2025-06-07 15:07:20,303 - INFO - Request: GET /queues/results/pull from 127.0.0.1
+2025-06-07 15:07:20,303 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:20,303 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:07:20,304 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:20] "[31m[1mGET /queues/results/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:07:21,964 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:07:21,965 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:21,965 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:07:21,965 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:21] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:07:29,012 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:07:29,013 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:29,013 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:07:29,013 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:29] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
+2025-06-07 15:07:36,060 - INFO - Request: GET /queues/transactions/pull from 127.0.0.1
+2025-06-07 15:07:36,060 - INFO - Headers: {'Host': 'localhost:7500', 'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'AGENT_OR_ADMIN_TOKEN'}
+2025-06-07 15:07:36,061 - INFO - Response: 400 BAD REQUEST - {"error":"Queue is empty"}
+
+2025-06-07 15:07:36,061 - INFO - 127.0.0.1 - - [07/Jun/2025 15:07:36] "[31m[1mGET /queues/transactions/pull HTTP/1.1[0m" 400 -
