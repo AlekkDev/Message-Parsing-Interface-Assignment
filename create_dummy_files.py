@@ -1,4 +1,4 @@
-import pickle
+#import pickle
 import joblib
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
 import random
-import os
+#import os
 
 MODEL_FILENAME = 'fraud_rf_model.pkl'
 STATUSES = ['submitted', 'accepted', 'rejected']

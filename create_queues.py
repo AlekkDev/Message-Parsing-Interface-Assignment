@@ -1,6 +1,6 @@
 import requests
 import json
-import config # Assuming config.py is in the same directory
+import config
 
 # Load tokens and base URL from config
 ADMIN_TOKEN = config.ADMIN_TOKEN

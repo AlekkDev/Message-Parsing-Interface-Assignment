@@ -1,8 +1,7 @@
 import requests
 import json
-import time # Added for sleep
+import time
 
-# Load your config to get tokens and queue URLs
 try:
     import config
     AGENT_TOKEN = config.AGENT_TOKEN
@@ -19,7 +18,7 @@ headers = {'Authorization': AGENT_TOKEN}
 
 print("Attempting to pull results from the queue...")
 pulled_count = 0
-max_pulls = 50 # Limit for demonstration, prevent infinite loop if queue never empties
+max_pulls = 50 # just in case to prevent infinite loop if queue never empties
 
 while pulled_count < max_pulls:
     response = requests.get(f"{RESULTS_QUEUE_URL}/pull", headers=headers)
@@ -33,7 +32,7 @@ while pulled_count < max_pulls:
     else:
         print(f"Error pulling from results queue: Status {response.status_code} - {response.text}")
         break
-    # Small delay to avoid hammering the queue, especially if it's empty
+    # delay to avoid hammering the queue if it's empty
     time.sleep(0.1)
 
 print(f"Finished pulling results. Total pulled: {pulled_count}")

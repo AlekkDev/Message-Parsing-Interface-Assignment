@@ -2,9 +2,9 @@ import requests
 import json
 import pandas as pd
 from datetime import datetime
-import os # <--- ADD THIS LINE
+import os
 
-# Load your config to get tokens and queue URLs
+# Load config to get tokens and queue URLs
 try:
     import config
     AGENT_TOKEN = config.AGENT_TOKEN
@@ -18,8 +18,8 @@ except AttributeError as e:
     print(f"Error in config.py: Missing attribute {e}. Ensure AGENT_TOKEN and TRANSACTIONS_QUEUE_URL are defined.")
     exit(1)
 
-# MODEL_FILENAME = 'fraud_rf_model.pkl' # This line is not needed in push.py
-# STATUSES = ['submitted', 'accepted', 'rejected'] # This line is not needed in push.py
+# MODEL_FILENAME = 'fraud_rf_model.pkl'
+# STATUSES = ['submitted', 'accepted', 'rejected']
 
 headers = {
     'Authorization': AGENT_TOKEN,
@@ -44,7 +44,7 @@ for index, row in df.iterrows():
     if isinstance(data['timestamp'], (pd.Timestamp, datetime)):
         data['timestamp'] = data['timestamp'].isoformat()
     
-    # Corrected: Append /push to the base URL here, not in config.py
+    #Append /push to the base URL
     response = requests.post(f"{TRANSACTIONS_QUEUE_URL}/push", headers=headers, json=data)
     print(f"Pushed {data.get('transaction_id', 'N/A')}: Status {response.status_code} - {response.text}")
     if response.status_code >= 400:

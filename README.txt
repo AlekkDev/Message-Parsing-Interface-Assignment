@@ -9,3 +9,4 @@ Workflow:
     this takes a lot of time usually 3-5 minutes
     (if you go to queue_data.json you can see that stuff is happening during this runtime)
 6. Now run pull.py in a different terminal (fetch all the stuff that ml_prediction_service did i guess idk)
+
