@@ -26,6 +26,7 @@ We developed a high-performance, distributed ML prediction service. It processes
 pip install mpi4py scikit-learn pandas requests joblib Flask
 ```
 ## Running the Service
+(all run in bash terminal)
 1. Generate Test data and model:
    ```bash
    python create_dummy_files.py
@@ -42,8 +43,8 @@ pip install mpi4py scikit-learn pandas requests joblib Flask
    ```bash
     python push.py
     ```
-5. Start the MPI service (Terminal 3):
-    ```bash
+5. Run the MPI prediction service, assuming all pip dependencies installed in bash already (Terminal 3):
+    ``` bash
     mpiexec -n 5 python ml_prediction_service.py
     ```
 6. Pull results from the queue (Terminal 4):
